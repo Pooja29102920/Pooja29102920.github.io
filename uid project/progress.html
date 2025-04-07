@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLearn - Programming E-Learning Platform</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeLearn</div>
+        <div class="nav-items">
+            <a href="after login.html">Home</a>
+            <a href="cources.html">Courses</a>
+            <a href="progress.html">My Progress</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="Discussions.html">Discussion Forum</a>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+    <main>
+        <section id="progress" class="progress-section">
+            <h2>My Learning Progress</h2>
+            <div class="progress-container">
+                <div class="progress-overview">
+                    <div class="progress-card">
+                        <h3>Overall Progress</h3>
+                        <div class="circular-progress">
+                            <span class="progress-value">40.83%</span>
+                        </div>
+                    </div>
+                    <div class="progress-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-book-open"></i>
+                            <span>Courses Completed: 2/6</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Learning Hours: 24</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificates: 2</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-progress-list">
+                    <div class="course-progress-item">
+                        <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=800%2C800&ssl=1" alt="Python">
+                        <div class="progress-details">
+                            <h4>Python Programming</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                            <span>100% Complete</span>
+                        </div>
+                    </div>
+                    <div class="course-progress-item">
+                        <img src="https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png" alt="Java">
+                        <div class="progress-details">
+                            <h4>Java Development</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%"></div>
+                            </div>
+                            <span>45% Complete</span>
+                        </div>
+                    </div>
+                    <div class="course-progress-item">
+                        <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png" alt="JavaScript">
+                        <div class="progress-details">
+                            <h4>JavaScript Mastery</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20%"></div>
+                            </div>
+                            <span>100% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeLearn. All rights reserved.</p>
+    </footer>
+
+    <script src="p1.js"></script>
+</body>
+</html>   
