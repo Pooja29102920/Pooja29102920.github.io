@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming E-Learning Platform</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Programming E-Learning Platform</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h2>Courses</h2>
+            <ul>
+                <li onclick="showSection('course1')">Introduction to Java</li>
+                <li onclick="showSection('course2')">Basics of Python</li>
+                <li onclick="showSection('quiz')">Final Quiz</li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="course1" class="content-section">
+                <h2>Introduction to Java</h2>
+                <p>Java is a high-level, class-based, object-oriented programming language.</p>
+                <button onclick="nextSection('course2')">Next →</button>
+            </section>
+
+            <section id="course2" class="content-section">
+                <h2>Basics of Python</h2>
+                <p>Python is an interpreted, high-level and general-purpose programming language.</p>
+                <button onclick="nextSection('quiz')">Next →</button>
+            </section>
+
+            <section id="quiz" class="content-section">
+                <h2>Final Quiz</h2>
+                <p>Answer the following question to receive your certificate:</p>
+                <p><b>What is the primary use of Java?</b></p>
+                <input type="text" id="quizAnswer" placeholder="Enter your answer">
+                <button onclick="checkQuiz()">Submit</button>
+                <p id="quizResult"></p>
+                <button id="certificateBtn" style="display:none;" onclick="generateCertificate()">Download Certificate</button>
+            </section>
+
+            <section id="certificate" class="content-section">
+                <h2>Congratulations!</h2>
+                <p>You have successfully completed the course!</p>
+                <div id="certificateContent">
+                    <h2>Certificate of Completion</h2>
+                    <p>This is to certify that <b><span id="studentName">Student</span></b> has successfully completed the Programming E-Learning course.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="project.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</body>
+</html>

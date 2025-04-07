@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics Quiz</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeLearn</div>
+        <div class="nav-items">
+            <a href="after login.html">Home</a>
+            <a href="cources.html">Courses</a>
+            <a href="progress.html">My Progress</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="Discussions.html">Discussion Forum</a>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h2>JavaScript Basics Quiz</h2>
+            <div class="quiz-info">
+                <span class="question-count">Question 1/10</span>
+                <div class="timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="time">10:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress" style="width: 10%"></div>
+        </div>
+
+        <div id="quiz">
+            <div class="question" id="q1">
+                <h3>1. Which keyword is used to declare a constant variable in JavaScript?</h3>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="a">
+                        var
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="b">
+                        let
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="c">
+                        const
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="d">
+                        static
+                    </label>
+                </div>
+            </div>
+
+            <div class="question hidden" id="q2">
+                <h3>2. What will console.log(typeof []) output?</h3>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="a">
+                        array
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="b">
+                        object
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="c">
+                        undefined
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="d">
+                        list
+                    </label>
+                </div>
+            </div>
+
+            <div class="question hidden" id="q3">
+                <h3>3. How do you write a single-line comment in JavaScript?</h3>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="a">
+                        # comment
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="b">
+                        // comment
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="c">
+                        /* comment */
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="d">
+                        -- comment
+                    </label>
+                </div>
+            </div>
+
+            <div class="question hidden" id="q4">
+                <h3>4. What is the correct way to check if a variable is undefined?</h3>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="a">
+                        if (variable === undefined)
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="b">
+                        if (variable == null)
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="c">
+                        if (typeof variable == "undefined")
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="d">
+                        if (!variable)
+                    </label>
+                </div>
+            </div>
+
+            <div class="question hidden" id="q5">
+                <h3>5. What is the output of: console.log(1 + "2" + 3)?</h3>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q5" value="a">
+                        6
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="b">
+                        123
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="c">
+                        "123"
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="d">
+                        Error
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-controls">
+            <button id="prevBtn" class="nav-btn" disabled>
+                <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button id="nextBtn" class="nav-btn">
+                Next <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="js results.html"><button id="submitBtn" class="submit-btn hidden">Submit Quiz</button></a>
+        </div>
+    </div>
+
+    <script src="js quiz.js"></script>
+</body>
+</html>
